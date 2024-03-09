@@ -1,0 +1,6 @@
+2024-03-06 11:07:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table if not exists review( reviewId INT PRIMARY KEY AUTO_INCREMENT, reviewContent VARCHAR(255), rating INT, productId INT, FOREIGN KEY (productId) REFERENCES product (productId)[*]"; expected "INDEX, ON, NOT DEFERRABLE, DEFERRABLE, NOCHECK, CHECK, ,, )"; SQL statement:
+create table if not exists review( reviewId INT PRIMARY KEY AUTO_INCREMENT, reviewContent VARCHAR(255), rating INT, productId INT, FOREIGN KEY (productId) REFERENCES product (productId) [42001-214]
+2024-03-06 11:09:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table if not exists review( reviewId INT PRIMARY KEY AUTO_INCREMENT, reviewContent VARCHAR(255), rating INT, productId INT, FOREIGN KEY (productId) REFERENCES product (productId)[*]"; expected "INDEX, ON, NOT DEFERRABLE, DEFERRABLE, NOCHECK, CHECK, ,, )"; SQL statement:
+create table if not exists review( reviewId INT PRIMARY KEY AUTO_INCREMENT, reviewContent VARCHAR(255), rating INT, productId INT, FOREIGN KEY (productId) REFERENCES product (productId) [42001-214]
