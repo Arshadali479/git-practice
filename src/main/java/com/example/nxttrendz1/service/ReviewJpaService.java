@@ -48,10 +48,12 @@ public class ReviewJpaService implements ReviewRepository {
 
     @Override
     public Review addReview(Review review) {
-        int productId = review.getProduct().getProductId();
-        try {            
+        Product product = review.getProduct();
+        int productId = product.getProductId();
+        try {
             product = productJpaRepository.findById(productId).get();
             review.setProduct(product);
+
 
             reviewJpaRepository.save(review);
             return review;
